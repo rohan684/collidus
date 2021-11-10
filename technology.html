@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/2ca48ba5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/design.css?v=1"/>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">  
+    <title>Technology</title>
+    <style>
+    body,h1,h2,h3,h4,h5,h6,p {font-family: "Roboto", sans-serif}
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    .bgimg-2
+    {
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/bkg.jpg");
+        min-height: 70%;
+    }
+    h3
+    {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: underline;
+        color: #041163;
+    }
+    #content p{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        font-size: 17px;
+    }
+    </style>
+<body>
+    <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-row w3-white w3-card" id="myNavbar" style="padding-top: 0.3%; padding-bottom: 0.3%;">
+      <a href="index.html" class="w3-bar-item w3-col m2 w3-button w3-hover-white w3-wide" style="padding-top: 10px;"><img src="images/logo.png" alt="not not_supported" width="170vw"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1" style="margin-left: 10%;">Customize</a>
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua  id1"> Classify</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1" >Technology</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-black w3-round-xlarge w3-hover-teal w3-right" style="padding: 6px 23px 6px 23px;margin-top: 1%;margin-right: 10px;">Login</a>
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1_1 w3-right">Signup</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Customize</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Classify</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Technology</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Signup</a>
+  </nav>
+
+  <!--Header image-->
+    <header class="bgimg-2 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-center" style="padding: 120px 20px;">
+            <p class="hh15">Technology Which Defines Us</p>
+        </div>
+    </header>
+
+
+    <div class="w3-container" style="padding:70px 16px;padding-bottom: 100px;" id="content">
+        <div>
+            <h3>Named Entity Recognition (NER)</h3>
+            <p>Collidus AI's NER apparatus works by recognizing the substances and their connections in a text entry, and by 
+                contrasting those elements with <b>hubs in an information diagram.</b> This correlation cycle allows the instrument 
+                to find comparable substances that it has experienced previously. The device utilizes those comparable elements 
+                to assist with figuring out which name to apply to an element in the text.
+            </p>
+            <p>The NER instrument accompanies two pre-assembled marking plans: an<b> "Exemplary NER" plot with 12 </b>
+                classifications, and a "Definite" conspire with 97 classes. Our Classic NER conspire utilizes the 
+                accompanying classifications: individual, association, area, international, office, occasion, item,
+                law, craftsmanship, nor (identity, other, religion, political), and different (which incorporates 
+                dialects). For the classes other than different, our classification definitions are basically the 
+                same as those <b>utilized by OntoNotes.</b> Our Detailed plan is mostly enlivened by the 112-class FIGER 
+                (Fine-Grained Entity Recognition) plot, yet we preclude a considerable lot of their names, and the 
+                <b>scientific categorization</b> that outcomes from the interaction portrayed underneath vary in more ways 
+                than one from the FIGER conspire.</p>
+            <p>Clients aren't restricted to the two<b>pre-characterized naming plans:</b> On our customization dashboard, 
+                clients have total adaptability to characterize their own substance classes by building a mark set 
+                and applying names to elements from our informational index. Collidus AI's customization apparatus 
+                deliberately chooses substances for clients to name to augment the data it gains from each name 
+                applied. Subsequently, it's not unexpected imaginable to modify a NER model by marking as not many 
+                as 3-5 elements for every classification. The intricacy of the marking plan and the degree to which 
+                custom class limits concur or contradict the substance likenesses recognized by the interaction 
+                portrayed beneath will both influence the measure of naming a client needs to perform to accomplish 
+                great outcomes.</p>
+        </div>
+
+        <div>
+            <h3>Automated knowledge graph & taxonomy creation</h3>
+            <p>The information diagram for the element order device on our site was created by a robotized pipeline 
+                in which Collidus AI programming handled <b>Wikipedia articles and CNN articles</b> (from the CNN/Daily News corpus). 
+                For each article, our product assembled a reenactment addressing the substances, connections, and occasions 
+                talked about. Then, at that point, it changed this reproduction into a diagram encoding both the connections 
+                referenced in the text and those that came about because of occasions depicted in the text. The product then, 
+                at that point, consolidated the diagrams from each article's reproduction into an information chart for the whole 
+                corpus.</p>
+            <p>Utilizing this information diagram addressing elements and their connections, our product created 
+                chart based word embeddings for the <b>substances (hubs) in the chart.</b> It utilized those embeddings to 
+                bunch comparable substances together, and afterward to change those groups into a various leveled 
+                scientific classification that underlies a non-specialized client's capacity to rapidly and 
+                effectively characterize a custom NER plot by marking elements<b> utilizing our customization dashboard.</b></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-display-container w3-center w3-row w3-light-grey w3-padding-64">
+        <div class="w3-col l4 m4 s4">
+        <img src="images/logo.png" alt="not_supported" width="50%">
+        </div>
+
+        <div class="w3-col l4 m4 s4">
+            <a href="index.html" class=" hh14">Home</a><br>
+            <a href="signin.html" class=" hh14">Customize</a><br>
+            <a href="signin.html" class=" hh14">Classify</a><br>
+            <a href="technology.html" class=" hh14">Technology</a>
+        </div>
+
+        <div class="w3-col l4 m4 s4">
+            <a href="https://www.linkedin.com/company/collidus" class="hh14"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
+            <a href="#" class="hh14"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
+            <a href="#" class="hh14"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a><br>
+            <a href="#" class="hh14"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+        </div>
+        <!--<a href="#home" class="w3-button w3-light-grey w3-display-bottomright"><i class="fa fa-arrow-up "></i>To the top</a>-->
+    </footer>
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+</body>
+</html>

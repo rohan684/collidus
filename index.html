@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/design.css?v=1"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">  
+    <title>Collidus</title>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+    body, html {
+    height: 100%;
+    line-height: 1.8;
+    }
+
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("images/bkg3.jpg");
+      min-height: 130%;
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .w3-left, .w3-right, .w3-badge {cursor:pointer;border: 2px;} 
+    .w3-badge {
+      height:16px;
+      width:15px;
+      padding:0;
+    }
+    </style>
+</head>
+<body>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-row w3-white w3-card" id="myNavbar" style="padding-top: 0.3%; padding-bottom: 0.3%;">
+      <a href="#" class="w3-bar-item w3-col m2 w3-button w3-hover-white w3-wide" style="padding-top: 10px;"><img src="images/logo.png" alt="not not_supported" width="170vw"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-hide-small w3-col m10" style="padding-top: 5px; padding-bottom: 1%;">
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1" style="margin-left: 10%;">Customize</a>
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua  id1"> Classify</a>
+        <a href="technology.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1">Technology</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-black w3-round-xlarge w3-hover-teal w3-right" style="padding: 6px 23px 6px 23px;margin-top: 1.5%;margin-right: 10px;">Login</a>
+        <a href="signin.html" class="w3-bar-item w3-button w3-hover-white w3-hover-text-aqua id1_1 w3-right">Signup</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Customize</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Classify</a>
+    <a href="technology.html" onclick="w3_close()" class="w3-bar-item w3-button">Technology</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+    <a href="signin.html" onclick="w3_close()" class="w3-bar-item w3-button">Signup</a>
+  </nav>
+  
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-center w3-text-white" style="padding:48px;"><br><br>
+      <div class="hh1">Experience-Based NER</div><br>
+      <div class="w3-xlarge w3-center hh2">Full Customization, No Code Required</div><br>
+        <div class="w3-content w3-display-container">
+          <div class="mySlides">
+            <div>
+              <img src="images/sld1.gif" alt="not_supported" class="slide1">
+            </div> 
+          </div>  
+           
+           <div class="mySlides">
+                <div>
+                    <img src="images/sld2.gif" alt="not_supported" class="slide1" style="border: 5px solid red;">
+                </div> 
+            </div>
+   
+            <div class="mySlides">
+                <div style="align-items: center;">
+                    <img src="images/sld3.gif" alt="not_supported" class="slide1" style="border: 5px solid green;">
+                </div> 
+            </div>
+            <br><br>
+            <div class="w3-center w3-container w3-section w3-large w3-text-grey w3-display-bottommiddle" style="width:100%">
+              <button class="w3-button w3-display-left indicators" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button  w3-display-right indicators" onclick="plusDivs(1)">&#10095;</button>
+              <br><br><br><br><br> 
+              <div style="padding-top: 50px;">
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+               </div>
+             </div>
+        </div>    
+      <div class="hh3 w3-large">
+        <p>Start with our information, pick your own classes, and modify your own Named Entity Recognition (NER) model here.</p>
+        <p><a href="#" class="w3-button w3-round-xxlarge w3-aqua w3-padding-large w3-large w3-margin-top w3-hover-teal ">Customize Your NER</a></p>
+
+      </div>
+    </div> 
+  </header>
+  
+  <!-- Features Section -->
+  <div class="w3-container" style="padding:90px 16px">
+    <h3 class="w3-center hh4">Try out a pre-built Named Entity Recognition (NER) model</h3>
+    <p class="w3-center hh5">This device distinguishes and characterizes Named Entities, or articles with legitimate names, in text sections. 
+      For instance, "Joe Biden" and "Washington DC" are both Named Entities; "president" and "city" are not.<br> 
+      It performs best on broadly useful information, for example, articles from sources like The New York Times, The Economist, and Foreign Affairs.</p>
+    <p class="w3-center w3-medium w3-xlarge hh6">Our Features</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center hh7"></i>
+        <p class="w3-large">Responsive</p>
+        <p class="hh8">Our Tool is fully responsive for all devices and support a wide range of devices to ensure a customer satisfied experience.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo hh7"></i>
+        <p class="w3-large">Straightforward</p>
+        <p class="hh8">We follow easy to use rule as we don't want to panic our users. Using are software is as easy as to download it. </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo hh7"></i>
+        <p class="w3-large">Design</p>
+        <p class="hh8">Interactive and easy to use design. You can use our software without any prior experience also no coding skills required.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo hh7"></i>
+        <p class="w3-large">Support</p>
+        <p class="hh8">We support all the famous platform like windows, macOs, ubuntu and linux. We also provide regular security  updates.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Product Section - "Collidus utilizes" -->
+  <div class="w3-container w3-light-grey" style="padding:90px 16px">
+    <h3 class="w3-center w3-xxlarge hh9">Collidus utilizes dynamic figuring out how to assist you with building your NER model rapidly</h3>
+    <p class="w3-center hh10">Collidus appoints you groups of 10 elements to name: Label your first cluster, and later errands will accompany suggested names.</p><br> 
+    <p class="w3-center hh11">At the point when you submit errands, we update our name suggestions and pick your next bunch of most noteworthy worth undertakings.</p>
+    <div class="w3-row-padding">
+        <img src="images/product.png" alt="not_supported" class="product">
+    </div>
+  </div>
+  
+  <div class="w3-container" style="padding:90px 16px">
+    <h3 class="w3-center w3-xxlarge hh9">Watch how our Tools adjusts to your decisions</h3>
+    <p class="w3-center hh10">Present a bunch of errands, and see the impact quickly as we update our mark proposals for many the elements in the preparation dataset.</p><br> 
+    <p class="w3-center hh11">Add or eliminate names to your mark set whenever.</p>
+    <div class="w3-row-padding">
+        <img src="images/product2.png" alt="not_supported" class="product">
+    </div>
+  </div>
+
+  
+  <!-- Review Section -->
+  <div class="w3-container w3-light-grey" style="padding:90px 16px">
+    <h3 class="w3-center w3-xxlarge">Our Partners</h3><br>
+    <p class="w3-center hh11">We are working with AI leaders</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <marquee behavior="alternate" SCROLLAMOUNT="4" direction="left">
+        <img src="images/client1.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client2.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client3.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client4.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client5.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client6.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client7.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client8.webp" alt="not_supported" class="marquee_img">
+        <img src="images/client9.webp" alt="not_supported" class="marquee_img">
+      </marquee>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Contact Section -->
+  <div class="w3-container" style="padding:90px 16px">
+    <h3 class="w3-center" style="font-size: 5vw; font-weight: 900;">CONTACT US</h3>
+    <p class="w3-center" style="font-size:2vw; margin-top: -15px;margin-bottom: 40px;">Lets get in touch. Send us a message:</p>
+    <div class="w3-half">
+      <p class="w3-center hh12 display">Integrate Collidus AI with your projects</p>
+      <p class="w3-center hh13 display">Modify your NER model utilizing your own text information. 
+        Call our API to utilize your custom NER model in your NLP projects.</p>
+    </div>
+    <div class="w3-half ">
+      <form action="#" class="form_sec">
+        <p style="padding: 10px ;"><img src="images/logo.png" alt="" class="display" width="25%"></p>
+        <p><input class="input_labels display" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="input_labels display" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="input_labels display" type="text" placeholder="Subject" required name="Subject"></p>
+          <button class="w3-button w3-red w3-hover-green input_btns display" type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-display-container w3-center w3-row w3-light-grey w3-padding-64">
+    <div class="w3-col l4 m4 s4">
+      <img src="images/logo.png" alt="not_supported" width="50%">
+    </div>
+
+    <div class="w3-col l4 m4 s4">
+        <a href="#" class=" hh14">Home</a><br>
+        <a href="signin.html" class=" hh14">Customize</a><br>
+        <a href="signin.html" class=" hh14">Classify</a><br>
+        <a href="technology.html" class=" hh14">Technology</a>
+    </div>
+
+    <div class="w3-col l4 m4 s4">
+        <a href="https://www.linkedin.com/company/collidus" class="hh14"><i class="fa fa-linkedin w3-hover-opacity"></i> Linkedin</a><br>
+        <a href="#" class="hh14"><i class="fa fa-facebook-official w3-hover-opacity"></i> Facebook</a><br>
+        <a href="#" class="hh14"><i class="fa fa-instagram w3-hover-opacity"></i> Instagram</a><br>
+        <a href="#" class="hh14"><i class="fa fa-twitter w3-hover-opacity"></i> Twitter</a>
+    </div>
+    <!--<a href="#home" class="w3-button w3-light-grey w3-display-bottomright"><i class="fa fa-arrow-up "></i>To the top</a>-->
+  </footer>
+   
+  <script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  function plusDivs(n) 
+  {
+    showDivs(slideIndex += n);
+  }
+  function currentDiv(n) 
+  {
+    showDivs(slideIndex = n);
+  }
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+  
+  
+    
+</body>
+</html>
